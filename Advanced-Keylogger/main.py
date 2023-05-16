@@ -115,7 +115,7 @@ def mail():
     msg.attach(part)
     server = smtplib.SMTP('smtp.outlook.com', 587)
     server.starttls()
-    server.login(yoladres,"malatyalikaan44**")
+    server.login(yoladres,"sendmail-password")
     text = msg.as_string()
     server.sendmail(yoladres, aliciadres, text)
     server.quit()
